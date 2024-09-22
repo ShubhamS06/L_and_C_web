@@ -234,15 +234,6 @@ hr {
   padding: 0;
 }
 
-.heading {
-  font-family: var(--font-secondary), sans-serif;
-  font-size: 3.8rem;
-  line-height: 4.18rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
-
 @media screen and (max-width: 1500px) {
   :root {
     font-size: 8px;

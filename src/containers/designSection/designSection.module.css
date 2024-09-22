@@ -21,13 +21,3 @@
     font-size: 2.4rem;
     line-height: 3.12rem;
 }
-
-.link {
-    text-decoration: none;
-    gap: .5ch;
-    font-size: 2.0rem;
-    font-weight: 500;
-    line-height: 2.6rem;
-    color: #CF7B60;
-    margin-top: 2rem;
-}
