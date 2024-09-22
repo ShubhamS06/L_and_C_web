@@ -1,0 +1,33 @@
+.container {
+    width: 80%;
+    gap: 5rem;
+}
+
+.container>*:first-child>*:last-child {
+    font-size: clamp(2rem, 2.5vw, 3.8rem);
+}
+
+.bottom {
+    gap: 10%;
+}
+
+.bottom>img {
+    width: 20%;
+    object-fit: contain;
+}
+
+.para {
+    color: #FFFFFF99;
+    font-size: 2.4rem;
+    line-height: 3.12rem;
+}
+
+.link {
+    text-decoration: none;
+    gap: .5ch;
+    font-size: 2.0rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: #CF7B60;
+    margin-top: 2rem;
+}

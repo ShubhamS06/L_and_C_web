@@ -1,0 +1,250 @@
+:root {
+  --color-primary-1: #CF7B60;
+  --color-primary-2: #E99378;
+  --color-white: #FFFFFF;
+
+  --bg-body: #0A1318;
+  --font-primary: "GeneralSans-Regular";
+  --font-secondary: "Syne";
+
+  --font-size-base: 10px;
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary), sans-serif !important;
+}
+
+.font-primary {
+  font-family: var(--font-primary), sans-serif;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary), sans-serif;
+}
+
+body {
+  background: var(--bg-body);
+  color: #ffffff;
+}
+
+/**
+* @license
+*
+* Font Family: General Sans
+* Designed by: Frode Helland
+* URL: https://www.fontshare.com/fonts/general-sans
+* © 2024 Indian Type Foundry
+*
+* General Sans Extralight 
+* General Sans ExtralightItalic 
+* General Sans Light 
+* General Sans LightItalic 
+* General Sans Regular 
+* General Sans Italic 
+* General Sans Medium 
+* General Sans MediumItalic 
+* General Sans Semibold 
+* General Sans SemiboldItalic 
+* General Sans Bold 
+* General Sans BoldItalic 
+* General Sans Variable (Variable font)
+* General Sans VariableItalic (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'GeneralSans-Extralight';
+  src: url('/fonts/GeneralSans-Extralight.woff2') format('woff2'),
+    url('/fonts/GeneralSans-Extralight.woff') format('woff'),
+    url('/fonts/GeneralSans-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-ExtralightItalic';
+  src: url('/fonts/GeneralSans-ExtralightItalic.woff2') format('woff2'),
+    url('/fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
+    url('/fonts/GeneralSans-ExtralightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Light';
+  src: url('/fonts/GeneralSans-Light.woff2') format('woff2'),
+    url('/fonts/GeneralSans-Light.woff') format('woff'),
+    url('/fonts/GeneralSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-LightItalic';
+  src: url('/fonts/GeneralSans-LightItalic.woff2') format('woff2'),
+    url('/fonts/GeneralSans-LightItalic.woff') format('woff'),
+    url('/fonts/GeneralSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Regular';
+  src: url('/fonts/GeneralSans-Regular.woff2') format('woff2'),
+    url('/fonts/GeneralSans-Regular.woff') format('woff'),
+    url('/fonts/GeneralSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Italic';
+  src: url('/fonts/GeneralSans-Italic.woff2') format('woff2'),
+    url('/fonts/GeneralSans-Italic.woff') format('woff'),
+    url('/fonts/GeneralSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Medium';
+  src: url('/fonts/GeneralSans-Medium.woff2') format('woff2'),
+    url('/fonts/GeneralSans-Medium.woff') format('woff'),
+    url('/fonts/GeneralSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-MediumItalic';
+  src: url('/fonts/GeneralSans-MediumItalic.woff2') format('woff2'),
+    url('/fonts/GeneralSans-MediumItalic.woff') format('woff'),
+    url('/fonts/GeneralSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Semibold';
+  src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2'),
+    url('/fonts/GeneralSans-Semibold.woff') format('woff'),
+    url('/fonts/GeneralSans-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-SemiboldItalic';
+  src: url('/fonts/GeneralSans-SemiboldItalic.woff2') format('woff2'),
+    url('/fonts/GeneralSans-SemiboldItalic.woff') format('woff'),
+    url('/fonts/GeneralSans-SemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Bold';
+  src: url('/fonts/GeneralSans-Bold.woff2') format('woff2'),
+    url('/fonts/GeneralSans-Bold.woff') format('woff'),
+    url('/fonts/GeneralSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-BoldItalic';
+  src: url('/fonts/GeneralSans-BoldItalic.woff2') format('woff2'),
+    url('/fonts/GeneralSans-BoldItalic.woff') format('woff'),
+    url('/fonts/GeneralSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'GeneralSans-Variable';
+  src: url('/fonts/GeneralSans-Variable.woff2') format('woff2'),
+    url('/fonts/GeneralSans-Variable.woff') format('woff'),
+    url('/fonts/GeneralSans-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'GeneralSans-VariableItalic';
+  src: url('/fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
+    url('/fonts/GeneralSans-VariableItalic.woff') format('woff'),
+    url('/fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid currentColor;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.heading {
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 3.8rem;
+  line-height: 4.18rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+
+/* @media screen and (max-width: 1500px) {
+  :root {
+    font-size: 8px;
+  }
+} */
