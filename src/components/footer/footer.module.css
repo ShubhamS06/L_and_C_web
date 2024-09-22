@@ -93,15 +93,29 @@
     border-radius: 1rem;
     gap: 8px;
 }
-    
-    .hr {
-        height: .08rem;
-        background: linear-gradient(90deg, rgba(233, 147, 120, 0) 0%, #E99378 50%, rgba(233, 147, 120, 0) 100%);
+
+.hr {
+    height: .08rem;
+    background: linear-gradient(90deg, rgba(233, 147, 120, 0) 0%, #E99378 50%, rgba(233, 147, 120, 0) 100%);
+}
+
+.bottom {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 1500px) {
+    .footer>* {
+        width: 95%;
     }
-    
-    .bottom {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16.8px;
-        padding: 1.5rem 0;
+
+    .top {
+        gap: 1rem;
     }
+
+    .top>*:nth-child(4) {
+        width: 30%;
+    }
+}
