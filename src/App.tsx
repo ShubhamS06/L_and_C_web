@@ -5,6 +5,7 @@ import HeroSection from './containers/heroSection'
 import DesignSection from './containers/designSection'
 import Footer from './components/footer'
 import ProjectSection from './containers/projectSection'
+import ExperienceSection from './containers/experienceSection'
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
       <HeroSection />
       <DesignSection />
       <ProjectSection />
+      <ExperienceSection />
       <Footer />
     </div>
   )
