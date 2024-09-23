@@ -1,0 +1,121 @@
+.footer {
+    width: 100%;
+    padding: 1rem 0;
+    color: var(--color-white);
+}
+
+.footer>* {
+    width: 85%;
+    margin-inline: auto;
+}
+
+.top {
+    margin: 10rem auto;
+    gap: 4rem;
+}
+
+.top>*:nth-child(1) {
+    gap: 4rem;
+    width: 20%;
+}
+
+.top>*:nth-child(4) {
+    width: 25%;
+}
+
+.brandImg {
+    width: 19.5rem;
+}
+
+.tagline {
+    margin-top: 2rem;
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    font-weight: 400;
+    line-height: 1.92rem;
+    letter-spacing: 0.01em;
+    color: #ffffff99;
+}
+
+.socials {
+    gap: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+
+.block {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.block>*:nth-child(2)>*:nth-child(1) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    color: #FFFFFFCC;
+
+}
+
+.block>*:nth-child(2)>*:nth-child(2) {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.16rem;
+}
+
+.link:first-child {
+    margin-top: 1.5rem;
+}
+
+.link {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.92rem;
+}
+
+.map {
+    /* width: 20rem; */
+    margin-bottom: 1.5rem;
+}
+
+.buttonPrimary {
+    background: #CF7B60;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 0.001em;
+    text-align: center;
+    padding: 1rem 2.4rem;
+    border-radius: 1rem;
+    gap: 8px;
+}
+
+.hr {
+    height: .08rem;
+    background: linear-gradient(90deg, rgba(233, 147, 120, 0) 0%, #E99378 50%, rgba(233, 147, 120, 0) 100%);
+}
+
+.bottom {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 1500px) {
+    .footer>* {
+        width: 95%;
+    }
+
+    .top {
+        gap: 1rem;
+    }
+
+    .top>*:nth-child(4) {
+        width: 30%;
+    }
+}
