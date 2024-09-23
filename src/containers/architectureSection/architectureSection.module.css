@@ -1,0 +1,62 @@
+.container {
+    margin-inline: auto;
+    margin-top: 20rem;
+    gap: 1rem;
+}
+
+.container>*:first-child {
+    width: 85% !important;
+    margin-inline: auto;
+    flex: 1%;
+}
+
+.container>*:first-child {
+    flex: 1%;
+}
+
+.container>*:last-child {
+    width: fit-content;
+}
+
+.tabs>* {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    padding: 1rem 2.4rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: #CF7B60;
+    opacity: 0.8;
+}
+
+.tabs>*:nth-child(3) {
+    opacity: 0.5;
+}
+
+.tabs>*[data-active="true"] {
+    opacity: 1;
+}
+
+.top {
+    gap: 5rem;
+}
+
+.bottom {
+    width: 92.5% !important;
+    gap: 15rem;
+}
+
+.bottom>* {
+    gap: 1.5rem;
+}
+
+.bottom>*:last-child {
+    gap: 4rem;
+    overflow-x: auto;
+}
+
+.bottom>*:last-child>* {
+    width: 50rem;
+    aspect-ratio: 16/9;
+    border-radius: 3.6rem;
+}
