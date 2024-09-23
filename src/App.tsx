@@ -6,6 +6,7 @@ import DesignSection from './containers/designSection'
 import Footer from './components/footer'
 import ProjectSection from './containers/projectSection'
 import ExperienceSection from './containers/experienceSection'
+import ReflectionsSection from './containers/reflectionsSection'
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
       <DesignSection />
       <ProjectSection />
       <ExperienceSection />
+      <ReflectionsSection />
       <Footer />
     </div>
   )
