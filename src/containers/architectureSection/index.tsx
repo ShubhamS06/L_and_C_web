@@ -7,8 +7,13 @@ const scrollToElement = debounce((el: HTMLElement) => el.scrollIntoView({ behavi
 export default function ArchitectureSection() {
     const [activeTab, setActiveTab] = useState(0)
     const divRef = useRef<HTMLDivElement>(null)
+    const lastActiveTab = useRef(0)
 
     useEffect(() => {
+        if (lastActiveTab.current == activeTab) { return }
+
+        lastActiveTab.current = activeTab
+
         if (divRef.current?.children?.[activeTab] instanceof HTMLElement)
             scrollToElement(divRef.current.children[activeTab])
     }, [activeTab])
