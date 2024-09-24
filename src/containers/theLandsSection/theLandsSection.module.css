@@ -1,0 +1,27 @@
+.container {
+    width: calc(100% - 15%);
+    aspect-ratio: 16 / 9;
+    padding: 7.5%;
+    background: linear-gradient(90deg, transparent, var(--bg-body) 80%);
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    inset: 0;
+    background: url("/bg-lines.svg");
+}
+
+.container>div {
+    transform: scale(.8) translateX(-15%);
+    gap: 6rem;
+    width: 70%;
+}
+
+.curve {
+    width: 30%;
+    left: 80% !important;
+}
