@@ -10,7 +10,7 @@ export default function ProjectSection() {
                 <img src="/FloorP 1.png" alt="" />
                 <div className={`${styles.tabs} flex text-center`}>
                     {["Floor Plan", "Interior", "Exterior"].map((tab, index) =>
-                    (<div data-active={activeTab == index}
+                    (<div key={tab} data-active={activeTab == index}
                         onClick={() => setActiveTab(index)}
                     >
                         {tab}

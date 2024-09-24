@@ -32,7 +32,7 @@ export default function ArchitectureSection() {
                 </div>
                 <div className={`${styles.tabs} flex flex-col`}>
                     {["Architecture", "Landscape", "Interior"].map((tab, index) =>
-                    (<div data-active={activeTab == index}
+                    (<div key={tab} data-active={activeTab == index}
                         onClick={() => setActiveTab(index)}
                     >
                         {tab}
