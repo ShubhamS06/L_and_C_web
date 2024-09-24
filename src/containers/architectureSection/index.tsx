@@ -15,7 +15,7 @@ export default function ArchitectureSection() {
 
     return (
         <div className={`${styles.container} flex flex-col`}>
-            <div className="flex">
+            <div className="flex justify-between flex-wrap">
                 <div className={`${styles.top} flex flex-col justify-between`}>
                     <div className="heading">Architecture Design</div>
                     <p className="subheading">

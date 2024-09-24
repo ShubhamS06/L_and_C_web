@@ -1,6 +1,6 @@
 .container {
     margin-inline: auto;
-    margin-top: 20rem;
+    margin: 20rem 0;
     gap: 1rem;
 }
 
@@ -38,6 +38,7 @@
 }
 
 .top {
+    width: 60%;
     gap: 5rem;
 }
 
@@ -58,5 +59,37 @@
 .bottom>*:last-child>* {
     width: 50rem;
     aspect-ratio: 16/9;
-    border-radius: 3.6rem;
+    border-radius: min(3.6rem, 5vw);
+}
+
+@media screen and (max-width: 700px) {
+    .container>*:first-child {
+        width: calc(100% - 5rem) !important;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .top~* {
+        margin: 2rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bottom {
+        gap: 1rem;
+    }
+
+    .bottom>*:first-child img {
+        width: 4rem !important;
+    }
+
+    .bottom>*:last-child {
+        gap: 1rem;
+    }
+
+    .bottom>*:last-child {
+        flex: 1%;
+    }
 }

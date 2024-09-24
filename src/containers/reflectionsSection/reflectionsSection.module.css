@@ -50,20 +50,36 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 4rem;
-    height: 4rem;
+    aspect-ratio: 1;
     z-index: 1;
 }
 
 .card p {
-    font-size: 2.4rem;
+    font-size: 2.4em;
     font-weight: 400;
     line-height: 3.24rem;
 }
 
 .card div {
     font-family: var(--font-secondary);
-    font-size: 3.6rem;
+    font-size: 3.6em;
     font-weight: 500;
     line-height: 4.86rem;
     color: #E99378;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        font-size: 5px;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .card>* {
+        line-height: 2rem !important;
+    }
+
+    .card::after {
+        width: 2rem;
+    }
 }
