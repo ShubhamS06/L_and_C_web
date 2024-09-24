@@ -10,9 +10,6 @@
     height: var(--height);
     width: 100%;
     background: linear-gradient(var(--bg-angle), transparent 0%, var(--bg-body) 95%);
-}
-
-.container[data-animate="true"] {
     animation: anim-bg-gradient 3s forwards ease-in-out;
     animation-delay: 3s;
 }
@@ -47,9 +44,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.container[data-animate="true"] .title {
     animation: anim-bg-move 3s forwards ease-in;
 }
 
@@ -70,10 +64,6 @@
 .heading,
 .subHeading {
     opacity: 0;
-}
-
-.container[data-animate="true"] .heading,
-.container[data-animate="true"] .subHeading {
     animation: anim-opacity 1s forwards ease-in;
     animation-delay: 3.5s;
 }
