@@ -21,3 +21,15 @@
     font-size: 2.4rem;
     line-height: 3.12rem;
 }
+
+@media screen and (max-width: 450px) {
+    .bottom {
+        gap: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom img {
+        width: 50%;
+    }
+}

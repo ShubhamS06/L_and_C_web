@@ -1,18 +1,24 @@
-import { useContext } from "react"
-import { brandName, navLinks } from "../../constants"
+import { useState } from "react"
+import { navLinks } from "../../constants"
 import styles from "./navbar.module.css"
 
 export default function Navbar() {
+    const [show, setShow] = useState(false)
 
     return (
         <div className={`${styles.navbar} flex items-center justify-between`}>
             <div className={`${styles.left} flex items-center`}>
                 <img src="/brand-logo.png" className={`${styles.brandImg}`} />
             </div>
-            <div className={`${styles.right} flex items-center`}>
+
+            <button data-is="toggler" data-toggled={show}
+                onClick={() => setShow(!show)}
+            ><img src="/icons/menu.svg" alt="" /></button>
+
+            <div className={`${styles.right} flex items-center`} data-show={show}>
                 {navLinks.map(({ text, path, isPrimary }) =>
                     <a
-                        className={`${styles.navLink} ${isPrimary ? styles.primary : ""} flex flex-col items-center cursor-pointer`}
+                        className={`${styles.navLink} ${isPrimary ? styles.primary : ""} data-praveen cursor-pointer`}
                         data-active={path === "/"}
                         onClick={() => {
                             document.getElementById(path)?.scrollIntoView()
