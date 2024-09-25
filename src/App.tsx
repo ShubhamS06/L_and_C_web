@@ -13,6 +13,7 @@ import ImagesGridSection from './containers/imagesGridSection'
 import TheArcSection from './containers/theArcSection'
 import TheLandsSection from './containers/theLandsSection'
 import TheInteriorSection from './containers/theInteriorSection'
+import ScrollSection from './containers/scrollSection'
 
 export default function App() {
 
@@ -24,10 +25,11 @@ export default function App() {
     if (!sectionRootEl) return;
 
     const onIntersection = (ens: IntersectionObserverEntry[]) => {
-      console.log(ens.map(e => e.target.id + e.intersectionRatio));
+      // console.log(ens.map(e => e.target.parentElement!.id + e.intersectionRatio));
+      // setVisibleSection("")
       ens.forEach(en => {
         if (en.intersectionRatio > 0.5) {
-          setVisibleSection(en.target.id)
+          setVisibleSection(en.target.parentElement!.id)
         }
       })
     }
@@ -36,12 +38,12 @@ export default function App() {
 
       ;[...sectionRootEl.children].forEach(section => {
         if (section instanceof HTMLElement) {
-          obs.observe(section)
+          obs.observe(section.firstElementChild as HTMLElement)
         }
       })
 
     return () => {
-      // obs.disconnect()
+      obs.disconnect()
     }
   }, [])
 
@@ -50,6 +52,7 @@ export default function App() {
       <Navbar />
       <HeroSection />
       <div id="animated-sections" className="d-contents">
+        <ScrollSection id="section-scroll" animate={visibleSection == "section-scroll"} />
         <TheArcSection id="section-theArc" animate={visibleSection == "section-theArc"} />
         <TheLandsSection id="section-theLands" animate={visibleSection == "section-theLands"} />
         <TheInteriorSection id="section-theInterior" animate={visibleSection == "section-theInterior"} />
