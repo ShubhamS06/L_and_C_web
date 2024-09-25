@@ -4,6 +4,9 @@
     padding: 7.5%;
     margin-bottom: 10rem;
     background: url("/bg-lines.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .block {

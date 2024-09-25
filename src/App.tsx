@@ -24,9 +24,9 @@ export default function App() {
     if (!sectionRootEl) return;
 
     const onIntersection = (ens: IntersectionObserverEntry[]) => {
-      // console.log(ens.map(e => e.target.id + e.intersectionRatio));
+      console.log(ens.map(e => e.target.id + e.intersectionRatio));
       ens.forEach(en => {
-        if (en.intersectionRatio == 1) {
+        if (en.intersectionRatio > 0.5) {
           setVisibleSection(en.target.id)
         }
       })
