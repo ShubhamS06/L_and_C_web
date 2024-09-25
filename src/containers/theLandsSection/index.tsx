@@ -4,7 +4,7 @@ export default function TheLandsSection({ id, animate }: { id: string; animate: 
 
     return (
         <div id={id} data-animate={animate} className={`${styles.container} relative grid-center-child`}>
-            <span className="absolute-center"></span>
+            
             <div className="flex flex-col">
                 <div className="heading">The Lands</div>
                 <div className="subheading">Transforming outdoor spaces into serene havens, our landscape designs seamlessly integrate nature and architecture. We create environments that are not only visually stunning but also sustainable and functional.</div>
