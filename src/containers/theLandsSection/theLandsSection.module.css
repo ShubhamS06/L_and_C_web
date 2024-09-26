@@ -13,15 +13,61 @@
     height: 100%;
     inset: 0;
     background: url("/bg-lines.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: transparent;
+}
+
+.container::before {
+    animation: anim-hide-bg 5s forwards;
+}
+
+@keyframes anim-hide-bg {
+    5% {
+        background: transparent;
+    }
+
+    100% {
+        background: url("/bg-lines.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .container>div {
     transform: scale(.8) translateX(-15%);
     gap: 6rem;
     width: 70%;
+    opacity: 0;
 }
 
 .curve {
     width: 30%;
     left: 80% !important;
+}
+
+
+.container>div {
+    animation: anim-opacity 5s forwards;
+    animation-delay: 1s;
+}
+
+.container .curve {
+    animation: anim-wave 5s infinite;
+}
+
+@keyframes anim-opacity {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes anim-wave {
+    50% {
+        filter: brightness(0) saturate(100%) invert(59%) sepia(73%) saturate(337%) hue-rotate(329deg) brightness(98%) contrast(89%);
+    }
+
+    100% {
+        filter: none;
+    }
 }
