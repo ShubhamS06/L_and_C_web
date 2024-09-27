@@ -19,7 +19,7 @@
     background: transparent;
 }
 
-.container::before {
+.container[data-animate="true"]::before {
     animation: anim-hide-bg 5s forwards;
     animation-delay: 3s;
 }
@@ -54,12 +54,12 @@
     left: 80% !important;
 }
 
-.container>div {
+.container[data-animate="true"]>div {
     animation: anim-opacity 5s forwards;
     animation-delay: 6s;
 }
 
-.container .curve {
+.container[data-animate="true"] .curve {
     animation: anim-center 8s forwards;
 }
 

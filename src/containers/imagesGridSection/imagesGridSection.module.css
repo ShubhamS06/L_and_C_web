@@ -42,23 +42,23 @@
     border-radius: 1.6rem;
 }
 
-.container .block {
+.container[data-animate="true"] .block {
     animation: anim-show 2s forwards ease-in;
 }
 
-.container .block:nth-of-type(1) {
+.container[data-animate="true"] .block:nth-of-type(1) {
     animation-delay: 1s;
 }
 
-.container .block:nth-of-type(4) {
+.container[data-animate="true"] .block:nth-of-type(4) {
     animation-delay: 3s;
 }
 
-.container .block:nth-of-type(3) {
+.container[data-animate="true"] .block:nth-of-type(3) {
     animation-delay: 5s;
 }
 
-.container .block:nth-of-type(2) {
+.container[data-animate="true"] .block:nth-of-type(2) {
     animation-delay: 7s;
 }
 

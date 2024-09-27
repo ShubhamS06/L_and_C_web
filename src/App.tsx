@@ -2,9 +2,9 @@ import './global.css'
 import './utility.global.css'
 import { useEffect, useState } from 'react'
 import Navbar from './components/navbar'
+import Footer from './components/footer'
 import HeroSection from './containers/heroSection'
 // import DesignSection from './containers/designSection'
-import Footer from './components/footer'
 // import ProjectSection from './containers/projectSection'
 import ExperienceSection from './containers/experienceSection'
 import ReflectionsSection from './containers/reflectionsSection'
@@ -15,38 +15,32 @@ import TheLandsSection from './containers/theLandsSection'
 import TheInteriorSection from './containers/theInteriorSection'
 import ScrollSection from './containers/scrollSection'
 import { debounce } from 'utiljs-pro'
+import { isElementVisible } from './utils/utils'
 
 export default function App() {
 
   const [visibleSection, setVisibleSection] = useState<string[]>([])
 
-  useEffect(() => {
+  const onScrollEnd = debounce(() => {
     const sectionRootEl = document.getElementById("animated-sections")
-
     if (!sectionRootEl) return;
 
-    const onIntersection = /* debounce */((ens: IntersectionObserverEntry[]) => {
-      console.log(ens.map(e => e.target!.id + e.intersectionRatio));
-      // setVisibleSection([])
-      ens.forEach(en => {
-        if (en.intersectionRatio === 0) {
-          setVisibleSection(s => { s.filter(e => e !== en.target!.id); return s })
-        } else {
-          setVisibleSection(s => { s.filter(e => e !== en.target!.id); s.push(en.target!.id); return s })
-        }
-      })
-    }/* , 50 */)
-
-    const obs = new IntersectionObserver(onIntersection, { threshold: [0, 1] })
-
+    setVisibleSection([])
       ;[...sectionRootEl.children].forEach(section => {
         if (section instanceof HTMLElement) {
-          obs.observe(section as HTMLElement)
+          if (isElementVisible(section.children[0])) {
+            setVisibleSection(s => { s.filter(e => e !== section.id); s.push(section.id); return s })
+          }
         }
       })
+    // 
+  }, 50)
+
+  useEffect(() => {
+    document.addEventListener("scrollend", onScrollEnd)
 
     return () => {
-      obs.disconnect()
+      document.removeEventListener("scrollend", onScrollEnd)
     }
   }, [])
 
