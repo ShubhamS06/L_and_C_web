@@ -8,10 +8,9 @@ export const heroSectionData = {
 
 export const navLinks = [
     { text: "Home", path: "/" },
-    { text: "Portfolio", path: "section-portfolio" },
-    { text: "About Us", path: "section-about" },
-    { text: "Contact Us", path: "section-contact-us" },
-    { text: "Enquire Now", path: "section-enquire-now", isPrimary: true },
+    { text: "Portfolio", path: "portfolio" },
+    { text: "About Us", path: "about" },
+    { text: "Contact Us", path: "contact-us" },
 ]
 
 export const sectionIds = navLinks.map(l => l.path)
