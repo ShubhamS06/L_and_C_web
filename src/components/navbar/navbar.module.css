@@ -42,9 +42,17 @@ button[data-is="toggler"] {
         gap: 2rem;
         flex-direction: column;
     }
+
+    :root {
+        --navbar-height: 18rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
+    :root {
+        --navbar-height: 10rem;
+    }
+
     .right {
         top: 100%;
         left: 0;

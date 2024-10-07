@@ -4,6 +4,7 @@ import AboutPage from './pages/about';
 import HomePage from './pages/home';
 import ErrorPage from './pages/error';
 import PortfolioPage from './pages/portfolio';
+import Portfolio1Page from './pages/portfolio-1';
 
 // for lazy loading
 // import LoadingScreen from './LoadingScreen';
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: "portfolio",
                 element: <PortfolioPage />,
+            },
+            {
+                path: "portfolio-1",
+                element: <Portfolio1Page />,
             },
         ],
     },

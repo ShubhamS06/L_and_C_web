@@ -160,6 +160,10 @@
     font-weight: 400;
 }
 
+.font-semibold {
+    font-weight: 500;
+}
+
 .font-bold {
     font-weight: 600;
 }

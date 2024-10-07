@@ -23,3 +23,30 @@ export const cardsData = [
     { title: "Rozha One Co.", text: "Architecture & interior Design", link: "", imageUrl: "/portfolio-card-4.png" },
 ]
 export type CardData = typeof cardsData[number]
+
+export const portfolioHighlightsData = [
+    {
+        icon: "/icons/highlight-1.png",
+        text: "Highlight",
+    },
+    {
+        icon: "/icons/highlight-2.png",
+        text: "Highlight",
+    },
+    {
+        icon: "/icons/highlight-3.png",
+        text: "Highlight",
+    },
+    {
+        icon: "/icons/highlight-4.png",
+        text: "Highlight",
+    },
+    {
+        icon: "/icons/highlight-5.png",
+        text: "Highlight",
+    },
+    {
+        icon: "/icons/highlight-6.png",
+        text: "Highlight",
+    },
+]
