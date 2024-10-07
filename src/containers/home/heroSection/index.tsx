@@ -1,4 +1,4 @@
-import { heroSectionData } from "../../constants"
+import { heroSectionData } from "../../../constants"
 import styles from "./heroSection.module.css"
 
 export default function HeroSection() {

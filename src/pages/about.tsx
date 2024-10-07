@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import { debounce } from 'utiljs-pro'
-import HeroSection from '../containers/heroSection'
-import TheArcSection from '../containers/theArcSection'
-import TheLandsSection from '../containers/theLandsSection'
-import TheInteriorSection from '../containers/theInteriorSection'
-import ScrollSection from '../containers/scrollSection'
+import HeroSection from '../containers/about/heroSection'
+import TheArcSection from '../containers/about/theArcSection'
+import TheLandsSection from '../containers/about/theLandsSection'
+import TheInteriorSection from '../containers/about/theInteriorSection'
+import ScrollSection from '../containers/about/scrollSection'
 import { isElementVisible } from '../utils/utils'
 
 export default function AboutPage() {

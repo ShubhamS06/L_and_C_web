@@ -3,7 +3,7 @@ import { navLinks } from "../../constants"
 import styles from "./navbar.module.css"
 import { NavLink } from "react-router-dom"
 import { debounce } from "utiljs-pro"
-import EnquireDialog from "../enquireDialog.tsx"
+import EnquireDialog from "../enquireDialog/index.tsx"
 
 export default function Navbar() {
     const [showNavlinks, setShowNavlinks] = useState(false)
