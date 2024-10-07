@@ -1,0 +1,24 @@
+.cardGroup,
+.header {
+    width: calc(100% - 15%);
+    margin-inline: auto;
+}
+
+.header {
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.header>* {
+    width: 40%;
+}
+
+.header>*:last-child {
+    width: 50%;
+}
+
+.cardGroup {
+    gap: 3rem;
+}

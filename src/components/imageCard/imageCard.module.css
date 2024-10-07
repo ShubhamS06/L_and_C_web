@@ -1,0 +1,43 @@
+.card {
+    border-radius: 3.2rem;
+    width: clamp(300px, calc(50% - 1.5rem), 80%);
+    aspect-ratio: 16 / 9;
+}
+
+.content {
+    border-bottom-left-radius: 3.2rem;
+    border-bottom-right-radius: 3.2rem;
+    height: 1rem;
+    background-color: #00000050;
+    backdrop-filter: blur(5px);
+    padding: 3rem;
+}
+
+.content,
+.content * {
+    transition: all .3s;
+}
+
+.card:not(:hover) .content>*:first-child {
+    padding-top: 2.5rem;
+    font-size: 25px;
+}
+
+.card:not(:hover) .content>*:last-child {
+    transform: translateY(100%);
+}
+
+.card:hover .content>*:last-child {
+    transform: translate(0, 20%);
+}
+
+.card:hover .content {
+    height: 7rem;
+    box-shadow: inset 2px -2px 15px #fff5;
+}
+
+.linkIcon {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+}

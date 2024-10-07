@@ -3,6 +3,7 @@ import App from './App';
 import AboutPage from './pages/about';
 import HomePage from './pages/home';
 import ErrorPage from './pages/error';
+import PortfolioPage from './pages/portfolio';
 
 // for lazy loading
 // import LoadingScreen from './LoadingScreen';
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: "about",
                 element: <AboutPage />,
+            },
+            {
+                path: "portfolio",
+                element: <PortfolioPage />,
             },
         ],
     },
