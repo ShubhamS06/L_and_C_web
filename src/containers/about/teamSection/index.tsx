@@ -9,6 +9,7 @@ export default function TeamSection() {
             <div className={`${styles.cardGroup} flex justify-evenly`}>
                 <div className={`${styles.card} relative`}>
                     <img src="/user-1.jpg" alt="" />
+                    <div className={`${styles.cardBorder} absolute`}></div>
                     <div className={`${styles.cardContent} flex flex-col justify-center items-center absolute font-semibold`}>
                         <div className={`${styles.cardTitle} capitalize`}>
                             lorem ipsum
@@ -29,6 +30,7 @@ export default function TeamSection() {
 
                 <div className={`${styles.card} relative`}>
                     <img src="/user-1.jpg" alt="" />
+                    <div className={`${styles.cardBorder} absolute`}></div>
                     <div className={`${styles.cardContent} flex flex-col justify-center items-center absolute font-semibold`}>
                         <div className={`${styles.cardTitle} capitalize`}>
                             lorem ipsum
