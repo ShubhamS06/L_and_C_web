@@ -26,6 +26,12 @@
     aspect-ratio: 1.08;
     object-fit: cover;
     border-radius: 2rem;
+    transition: all 0.3s;
+}
+
+.card:hover>img {
+    translate: 0 -20%;
+    scale: 0.8;
 }
 
 .cardBorder,
