@@ -6,6 +6,8 @@ import TheLandsSection from '../containers/about/theLandsSection'
 import TheInteriorSection from '../containers/about/theInteriorSection'
 import ScrollSection from '../containers/about/scrollSection'
 import { isElementVisible } from '../utils/utils'
+import TeamSection from '../containers/about/teamSection'
+import ContactSection from '../containers/about/contactSection'
 
 export default function AboutPage() {
 
@@ -43,6 +45,8 @@ export default function AboutPage() {
         <TheLandsSection id="section-theLands" animate={visibleSection.includes("section-theLands")} />
         <TheInteriorSection id="section-theInterior" animate={visibleSection.includes("section-theInterior")} />
       </div>
+      <TeamSection />
+      <ContactSection />
     </>
   )
 }

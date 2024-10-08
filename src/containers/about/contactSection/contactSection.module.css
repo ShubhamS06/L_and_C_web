@@ -1,0 +1,90 @@
+.container {
+    margin-top: 5rem;
+    aspect-ratio: 1.74;
+    background: #000000CC;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: var(--height);
+    background: url("/contact-bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.container>* {
+    width: 35%;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 3.0rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+    color: #e99378;
+}
+
+.contactCard {
+    background: linear-gradient(137.27deg, #1B323F 10.24%, #0A1318 97.89%);
+    padding: 3.6rem 4rem;
+    gap: 2rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.label>*:not(input) {
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.label [data-mb2] {
+    transform: translate(0, -150%);
+}
+
+.input {
+    padding: 1rem;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    /* border-image-source: linear-gradient(90deg, rgba(106, 106, 106, 0.5) 0%, rgba(255, 255, 255, 0.44) 17%, rgba(255, 255, 255, 0.44) 82%, rgba(106, 106, 106, 0.5) 100%); */
+}
+
+.input:focus {
+    outline: transparent;
+}
+
+.input:focus~span,
+.input:not(:placeholder-shown)~span {
+    display: none;
+}
+
+.primaryButton {
+    background: #E99378;
+    border-radius: .6rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--color-white);
+    padding: 1.6rem 5.4rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        padding-block: 5rem;
+    }
+
+    .container>* {
+        width: 85%;
+    }
+}
