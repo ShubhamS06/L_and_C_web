@@ -24,7 +24,7 @@ export default function Portfolio1Page() {
         </div>
       </div>
 
-      <div className={`${styles.mapSection} flex justify-between flex-wrap`}>
+      <div className={`${styles.mapSection} flex justify-between items-center`}>
         <img src="/portfolio-map.svg" alt="" />
         <div className={`${styles.highlightGroup} flex flex-wrap`}>
           {portfolioHighlightsData.map(({ icon, text }, index) =>

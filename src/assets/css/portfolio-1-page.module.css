@@ -1,3 +1,9 @@
+@property --padding-inline {
+    syntax: '<length-percentage>';
+    inherits: false;
+    initial-value: 7.5%;
+}
+
 .header {
     aspect-ratio: 2.5;
     margin-top: var(--navbar-height);
@@ -28,9 +34,9 @@
 .imagesSection,
 .mapSection,
 .projectSection {
-    width: calc(100% - 15%);
+    width: calc(100% - var(--padding-inline) * 2);
     margin-inline: auto;
-    padding: 3rem 7.5%;
+    padding: 3rem var(--padding-inline);
     gap: 3rem;
 }
 
@@ -76,15 +82,6 @@
     width: 45vw;
 }
 
-.imagesSection>*:first-child>img {
-    /* position: absolute;
-    right: 0;
-    top: 0; */
-    /* width: 35vw; */
-    /* aspect-ratio: 6/4; */
-    /* transform: translateY(2vw); */
-}
-
 .imagesSection>*:nth-child(2) {
     gap: 2rem;
     width: 100%;
@@ -95,7 +92,6 @@
 }
 
 .imagesSection>*:nth-child(2)>* {
-    /* width: 25%; */
     max-height: 80%;
     transition: all .3s;
 }
@@ -191,6 +187,7 @@
 .imagesSection2>*:nth-child(3) {
     width: 100%;
     grid-area: img3;
+    height: 100%;
 }
 
 .imagesSection2>*:nth-child(4) {
@@ -203,11 +200,53 @@
 }
 
 .imagesSection2 {
+    --gap: 1rem;
+    gap: calc(var(--gap) * 3);
     display: grid;
-    grid-template-columns: calc(40% - 1rem) calc(35% - 1rem) calc(25% - 1rem);
-    grid-template-rows: calc(35% - 1rem) calc(45% - 1rem) fit-content;
+    grid-template-columns: calc(40% - var(--gap)) calc(35% - var(--gap)) calc(25% - var(--gap));
+    grid-template-rows: calc(35% - var(--gap)) calc(45% - var(--gap)) fit-content;
     grid-template-areas:
         "img1 img2 img4"
         "img1 img3 img4"
         "text img3 img4";
+}
+
+@media screen and (max-width: 1100px) {
+    .mapSection {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+        --padding-inline: 5%;
+    }
+
+    .renderSection,
+    .imagesSection>*:first-child {
+        flex-direction: column;
+    }
+
+    .renderSection>*,
+    .renderSection>*>*,
+    .imagesSection>*:first-child>* {
+        width: 100% !important;
+        max-width: unset;
+    }
+
+    .imagesSection>*:nth-child(1) {
+        row-gap: 3rem;
+    }
+
+    .imagesSection>*:nth-child(2) img {
+        border-radius: 1rem;
+    }
+
+    .imagesSection2 img {
+        border-radius: 1.5rem;
+    }
+
+    .imagesSection2 {
+        --gap: .5rem;
+    }
 }
