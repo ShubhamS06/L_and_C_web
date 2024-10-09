@@ -1,0 +1,97 @@
+.container {
+    width: calc(100% - 15%);
+    margin: auto;
+    margin-block: 5rem 20rem;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 3.0rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+    color: #e99378;
+}
+
+.cardGroup {
+    margin-top: 2.4rem;
+    gap: 2rem;
+}
+
+.card {
+    width: min(40rem, 100%);
+    padding-bottom: 5rem;
+}
+
+.card>img {
+    aspect-ratio: 1.08;
+    object-fit: cover;
+    border-radius: 2rem;
+    transition: all 0.3s;
+}
+
+.card:hover>img {
+    translate: 0 -20%;
+    scale: 0.8;
+}
+
+.cardBorder,
+.cardContent {
+    left: 50%;
+    top: 30rem;
+    transform: translateX(-50%);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 95%;
+}
+
+.cardContent {
+    background: #0A1318;
+    border-bottom: none;
+    padding-block: 2.4rem;
+    gap: 1rem;
+    height: calc(40% - 4.8rem - 2rem);
+}
+
+.cardBorder {
+    padding: 1px;
+    top: calc(30rem - 1px);
+    height: 40%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 83.96%);
+}
+
+.cardTitle {
+    font-family: var(--font-secondary);
+    font-size: 2.8rem;
+    line-height: 3.08rem;
+}
+
+.cardAlt {
+    font-size: 1.8rem;
+    line-height: 1.98rem;
+    letter-spacing: 0.02em;
+    color: #FFFFFF99;
+}
+
+.cardContent>*:last-child {
+    gap: 1.5rem;
+}
+
+.cardSocial {
+    background: #E993781A;
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: 1px solid rgba(233, 147, 120, 0.4);
+}
+
+.cardSocial>img {
+    width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .cardGroup {
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+    }
+}

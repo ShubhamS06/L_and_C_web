@@ -10,6 +10,10 @@
     position: relative;
 }
 
+.absolute {
+    position: absolute;
+}
+
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -158,6 +162,10 @@
 
 .font-normal {
     font-weight: 400;
+}
+
+.font-semibold {
+    font-weight: 500;
 }
 
 .font-bold {

@@ -1,0 +1,35 @@
+.container {
+    --height: 70rem;
+    height: var(--height);
+    width: 100%;
+    gap: 5rem;
+    background: linear-gradient(0deg, #0A1318 0%, rgba(10, 19, 24, 0.6) 100%);
+}
+
+.container::after {
+    content: "";
+
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: var(--height);
+    background: url("/about-hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+.heading,
+.subHeading {
+    width: clamp(200px, 70rem, 80vw);
+    padding-left: min(10rem, 5vw);
+}
+
+.subHeading {
+    padding-bottom: 2rem;
+}

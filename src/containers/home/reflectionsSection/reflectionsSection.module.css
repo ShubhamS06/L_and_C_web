@@ -1,0 +1,85 @@
+.container {
+    width: calc(100% - 15%);
+    margin-inline: auto;
+    --gap: 6rem;
+    gap: var(--gap);
+}
+
+
+.container img {
+    border-radius: min(2rem, 2vw);
+}
+
+.container>*:last-child>*:first-child {
+    width: 80%;
+}
+
+.container>*:last-child>*:last-child {
+    width: 50%;
+}
+
+.header {
+    gap: 1.5rem;
+}
+
+.title {
+    font-size: 3.0rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+    color: #e99378;
+}
+
+.card {
+    height: min-content;
+    padding: min(8.2rem, 8.2vw) min(6rem, 6vw);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    background: linear-gradient(104.02deg, rgba(16, 29, 36, 0.8) -10.43%, rgba(16, 29, 36, 0.5) 96.05%);
+    gap: 3.2rem;
+    border: 1px solid #E99378;
+    border-image-source: linear-gradient(104.85deg, rgba(16, 29, 36, 0.8) -4.5%, rgba(14, 25, 31, 0.5) 102.77%);
+    backdrop-filter: blur(5px);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: url('/icons/quotation.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4rem;
+    aspect-ratio: 1;
+    z-index: 1;
+}
+
+.card p {
+    font-size: 2.4em;
+    font-weight: 400;
+    line-height: 3.24rem;
+}
+
+.card div {
+    font-family: var(--font-secondary);
+    font-size: 3.6em;
+    font-weight: 500;
+    line-height: 4.86rem;
+    color: #E99378;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        font-size: 5px;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .card>* {
+        line-height: 2rem !important;
+    }
+
+    .card::after {
+        width: 2rem;
+    }
+}
