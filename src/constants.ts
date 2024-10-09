@@ -17,10 +17,10 @@ export const sectionIds = navLinks.map(l => l.path)
 
 // PortfolioPage
 export const cardsData = [
-    { title: "Rozha One Co.", text: "Architecture & interior Design", link: "", imageUrl: "/portfolio-card-1.png" },
-    { title: "Casa Serenity", text: "Architecture & interior Design", link: "", imageUrl: "/portfolio-card-2.png" },
-    { title: "Casa Serenity", text: "Architecture & interior Design", link: "", imageUrl: "/portfolio-card-3.png" },
-    { title: "Rozha One Co.", text: "Architecture & interior Design", link: "", imageUrl: "/portfolio-card-4.png" },
+    { title: "Rozha One Co.", text: "Architecture & interior Design", link: "/portfolio-1", imageUrl: "/portfolio-card-1.png" },
+    { title: "Casa Serenity", text: "Architecture & interior Design", link: "/portfolio-1", imageUrl: "/portfolio-card-2.png" },
+    { title: "Casa Serenity", text: "Architecture & interior Design", link: "/portfolio-1", imageUrl: "/portfolio-card-3.png" },
+    { title: "Rozha One Co.", text: "Architecture & interior Design", link: "/portfolio-1", imageUrl: "/portfolio-card-4.png" },
 ]
 export type CardData = typeof cardsData[number]
 
