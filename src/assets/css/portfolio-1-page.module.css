@@ -63,7 +63,6 @@
 .highlight {
     font-size: 2rem;
     gap: .5rem;
-    margin-left: auto;
 }
 
 .highlight>div {
@@ -215,6 +214,11 @@
     .mapSection {
         flex-direction: column;
     }
+
+    .highlightGroup>div,
+    .highlightGroup {
+        justify-content: space-evenly !important;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -231,7 +235,7 @@
     .renderSection>*>*,
     .imagesSection>*:first-child>* {
         width: 100% !important;
-        max-width: unset;
+        max-width: unset !important;
     }
 
     .imagesSection>*:nth-child(1) {

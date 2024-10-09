@@ -218,6 +218,10 @@ button {
   cursor: pointer;
 }
 
+a.route {
+  color: currentColor;
+}
+
 button:disabled {
   cursor: not-allowed;
 }

@@ -30,9 +30,7 @@ export default function Navbar() {
                         <NavLink
                             to={path}
                             className={({ isActive }) => `${styles.navLink} data-praveen cursor-pointer${isActive ? " " + styles.active : ""}`}
-                            onClick={() => {
-                                document.getElementById(path)?.scrollIntoView()
-                            }}
+                            onClick={() => (showNavlinks) && setShowNavlinks(false)}
                             key={text}>
                             {text}
                         </NavLink>
