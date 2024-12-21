@@ -345,6 +345,7 @@
     line-height: 4.18rem;
     font-weight: 600;
     letter-spacing: 0.04em;
+    max-width: 868px;
 }
 
 .subheading {
