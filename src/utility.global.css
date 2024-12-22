@@ -408,4 +408,16 @@ a {
         line-height: 17.6px;
         margin-inline: unset;
     }
+
+    .flex-col-sm {
+        flex-direction: column;
+    }
+
+    .flex-wrap-sm {
+        flex-wrap: wrap;
+    }
+
+    .w-full-sm {
+        width: 100% !important;
+    }
 }
