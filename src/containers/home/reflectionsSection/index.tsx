@@ -5,8 +5,8 @@ export default function ReflectionsSection() {
     return (
         <div className={`${styles.container} flex flex-col items-center`}>
             <div className={`${styles.header} text-center flex flex-col`}>
-                <div className={styles.title}>Client Reflections</div>
-                <div className="heading">Discover how we transform spaces and lives through their stories.</div>
+                <div className={`${styles.title} text-left-sm`}>Client Reflections</div>
+                <div className="heading text-left-sm">Discover how we transform spaces and lives through their stories.</div>
             </div>
             <div className="stack w-full items-center">
                 <div className="me-auto">

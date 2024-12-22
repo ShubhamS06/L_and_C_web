@@ -5,7 +5,6 @@
     gap: var(--gap);
 }
 
-
 .container img {
     border-radius: min(2rem, 2vw);
 }
@@ -81,5 +80,22 @@
 
     .card::after {
         width: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container>*:last-child>*:first-child {
+        width: 100%;
+    }
+
+    .container {
+        padding-bottom: 10rem;
+    }
+
+    .container>*:last-child>*:last-child {
+        width: 85%;
+        margin-inline: auto;
+        margin-top: auto;
+        transform: translateY(70%);
     }
 }
