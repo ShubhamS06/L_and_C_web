@@ -1,7 +1,7 @@
 @property --padding-inline {
     syntax: '<length-percentage>';
     inherits: false;
-    initial-value: 7.5%;
+    initial-value: 5%;
 }
 
 .header {
