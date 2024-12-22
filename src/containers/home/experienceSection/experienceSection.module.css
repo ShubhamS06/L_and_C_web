@@ -2,8 +2,8 @@
     position: relative;
     margin: 20rem auto;
     margin-bottom: 0;
-    width: calc(100% - 15%);
-    padding: 15rem 7.5%;
+    width: calc(100% - 10%);
+    padding: 15rem 5%;
     --gap: 6rem;
     gap: var(--gap);
     background: url("/experienceSection-bg.png");
