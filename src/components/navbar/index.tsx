@@ -22,10 +22,10 @@ export default function Navbar() {
                 <button data-is="toggler" data-toggled={showNavlinks}
                     onClick={toggleShowNavlinks}
                 >
-                    <img src="/icons/menu.svg" alt="" />
+                    <img src={showNavlinks ? "/icons/close-x-sm.svg" : "/icons/menu.svg"} alt="" />
                 </button>
 
-                <div className={`${styles.right} flex items-center`} data-show={showNavlinks}>
+                <div className={`${styles.right} flex`} data-show={showNavlinks}>
                     {navLinks.map(({ text, path }) =>
                         <NavLink
                             to={path}

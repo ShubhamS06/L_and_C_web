@@ -56,11 +56,12 @@ button[data-is="toggler"] {
     .right {
         top: 100%;
         left: 0;
-        padding: 2rem;
+        padding: 10px;
+        padding-bottom: 36px;
         background: var(--bg-body);
         width: calc(100% - 4rem);
         position: absolute;
-        gap: 2rem;
+        gap: 24px;
         flex-direction: column;
         transition: .3s all;
         opacity: 1;
@@ -81,7 +82,17 @@ button[data-is="toggler"] {
         display: block;
     }
 
-    button[data-is="toggler"][data-toggled="true"] {
-        transform: rotate(90deg);
+    .primary {
+        padding: 10px 24px;
+        font-size: 14px;
+        line-height: 18.9px;
+        margin-right: auto;
+        font-family: var(--font-secondary);
+        font-weight: 600;
+    }
+
+    .navLink {
+        font-size: 16px;
+        line-height: 19.2px;
     }
 }
