@@ -10,7 +10,7 @@ export const navLinks = [
     { text: "Home", path: "/" },
     { text: "Portfolio", path: "portfolio" },
     { text: "About Us", path: "about" },
-    { text: "Contact Us", path: "contact-us" },
+    // { text: "Contact Us", path: "contact-us" },
 ]
 
 export const sectionIds = navLinks.map(l => l.path)

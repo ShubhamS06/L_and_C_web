@@ -75,6 +75,10 @@
     justify-content: end;
 }
 
+.m-0 {
+    margin: 0 !important;
+}
+
 .ms-auto {
     margin-left: auto !important;
 }
@@ -345,6 +349,8 @@
     line-height: 4.18rem;
     font-weight: 600;
     letter-spacing: 0.04em;
+    max-width: 868px;
+    margin-inline: auto;
 }
 
 .subheading {
@@ -386,4 +392,32 @@ a {
 
 .dev:nth-child(even) {
     outline-color: #0000ff50;
+}
+
+@media screen and (max-width: 450px) {
+    .text-left-sm {
+        text-align: left;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 16px;
+        line-height: 17.6px;
+        margin-inline: unset;
+    }
+
+    .flex-col-sm {
+        flex-direction: column;
+    }
+
+    .flex-wrap-sm {
+        flex-wrap: wrap;
+    }
+
+    .w-full-sm {
+        width: 100% !important;
+    }
 }

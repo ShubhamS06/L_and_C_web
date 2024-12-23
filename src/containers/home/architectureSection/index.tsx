@@ -22,8 +22,8 @@ export default function ArchitectureSection() {
         <div className={`${styles.container} flex flex-col`}>
             <div className="flex justify-between flex-wrap">
                 <div className={`${styles.top} flex flex-col justify-between`}>
-                    <div className="heading">Architecture Design</div>
-                    <p className="subheading">
+                    <div className="heading text-left m-0">Architecture Design</div>
+                    <p className="subheading text-left">
                         Transforming outdoor spaces into serene havens, our landscape designs seamlessly integrate nature and architecture. We create environments
                     </p>
                     <a className={`external-link flex`} href="#">

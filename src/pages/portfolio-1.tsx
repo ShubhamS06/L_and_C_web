@@ -62,10 +62,10 @@ export default function Portfolio1Page() {
         <div className="subheading">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet urna, nec maximus lorem dignissim eget. Aliquam in turpis sit amet ligula mollis tempus sit amet sed leo. Vestibulum finibus est at lacus laoreet, ut viverra nisl egestas. In interdum eu tortor sit amet malesuada.
         </div>
-        <div className="flex">
-          <img src="/texture-03.png" alt="" />
-          <img src="/texture-02.png" alt="" />
-          <img src="/texture-01.png" alt="" />
+        <div className="flex flex-col-sm">
+          <img className="w-full-sm" src="/texture-03.png" alt="" />
+          <img className="w-full-sm" src="/texture-02.png" alt="" />
+          <img className="w-full-sm" src="/texture-01.png" alt="" />
         </div>
       </div>
 

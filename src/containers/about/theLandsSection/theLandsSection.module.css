@@ -1,7 +1,7 @@
 .container {
-    width: calc(100% - 15%);
+    width: calc(100% - 10%);
     aspect-ratio: 16 / 9;
-    padding: 7.5%;
+    padding: 5%;
     background: linear-gradient(90deg, transparent, var(--bg-body) 80%);
 }
 

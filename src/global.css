@@ -15,7 +15,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: var(--font-primary), sans-serif !important;
+  font-family: var(--font-primary), sans-serif;
 }
 
 .font-primary {
