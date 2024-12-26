@@ -83,11 +83,11 @@ button[data-is="toggler"] {
     }
 
     .primary {
-        padding: 10px 24px;
-        font-size: 14px;
-        line-height: 18.9px;
+        padding: 10px 24px !important;
+        font-size: 14px !important;
+        line-height: 18.9px !important;
         margin-right: auto;
-        font-family: var(--font-secondary);
+        font-family: var(--font-secondary) !important;
         font-weight: 600;
     }
 
