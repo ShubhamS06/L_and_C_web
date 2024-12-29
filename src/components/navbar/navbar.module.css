@@ -4,6 +4,10 @@
     width: calc(100% - 8rem);
     padding: 2rem 4rem;
     z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 97.5px;
+    min-height: 126px;
 }
 
 button[data-is="toggler"] {
@@ -20,6 +24,7 @@ button[data-is="toggler"][data-toggled="true"] {
 
 .right {
     gap: 4rem;
+    align-items: center;
 }
 
 .navLink {
