@@ -10,7 +10,14 @@
 
   --font-size-base: 10px;
   font-size: 10px;
+
+  --container-spacing: 5%;
 }
+
+/* DEV: shows all element's position */
+/* [data-is="page"]>* * {
+  outline: 1px dashed #3ebef545;
+} */
 
 * {
   margin: 0;

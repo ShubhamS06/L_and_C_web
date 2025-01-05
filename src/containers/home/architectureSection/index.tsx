@@ -43,10 +43,10 @@ export default function ArchitectureSection() {
                 <div className="flex">
                     <img
                         onClick={() => activeTab > 0 && setActiveTab(activeTab - 1)}
-                        width={30} src="/icons/Arrow 2.svg" alt="" />
+                        width={61} src="/icons/Arrow 2.svg" alt="" />
                     <img
                         onClick={() => activeTab < 2 && setActiveTab(activeTab + 1)}
-                        width={30} src="/icons/Arrow 1.svg" alt="" />
+                        width={61} src="/icons/Arrow 1.svg" alt="" />
                 </div>
                 <div className="flex" ref={divRef}>
                     <img width={200} src="/architecture-img-1.png" alt="" />
