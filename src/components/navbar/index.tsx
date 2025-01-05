@@ -15,9 +15,11 @@ export default function Navbar() {
     return (
         <>
             <div className={`${styles.navbar} flex items-center justify-between`}>
-                <div className={`${styles.left} flex items-center`}>
-                    <img src="/brand-logo.png" className={`${styles.brandImg}`} />
-                </div>
+                <NavLink to="/" className='d-contents'>
+                    <div className={`${styles.left} flex items-center`}>
+                        <img src="/brand-logo.png" className={`${styles.brandImg}`} />
+                    </div>
+                </NavLink>
 
                 <button data-is="toggler" data-toggled={showNavlinks}
                     onClick={toggleShowNavlinks}

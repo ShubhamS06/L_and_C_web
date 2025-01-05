@@ -68,7 +68,7 @@ button[data-is="toggler"][data-toggled="true"] {
         padding: 10px 16px;
         padding-block: 36px;
         background: var(--bg-body);
-        width: calc(100% - 20px);
+        width: calc(100% - 32px);
         position: absolute;
         gap: 24px;
         flex-direction: column;

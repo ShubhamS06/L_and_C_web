@@ -1,5 +1,5 @@
 .container {
-    width: calc(100% - 10%);
+    width: calc(100% - (var(--container-spacing) * 2)) !important;
     aspect-ratio: 16 / 9;
     padding: 5%;
     margin-bottom: 10rem;

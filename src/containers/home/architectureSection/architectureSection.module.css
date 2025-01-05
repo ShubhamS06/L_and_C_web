@@ -1,16 +1,12 @@
 .container {
-    margin-inline: auto;
-    margin: 20rem 0;
+    width: 100%;
+    margin: 20rem auto;
     gap: 1rem;
 }
 
 .container>*:first-child {
-    width: 85% !important;
+    width: calc(100% - (var(--container-spacing) * 2)) !important;
     margin-inline: auto;
-    flex: 1%;
-}
-
-.container>*:first-child {
     flex: 1%;
 }
 
@@ -43,7 +39,7 @@
 }
 
 .bottom {
-    width: 92.5% !important;
+    width: calc(100% - var(--container-spacing)) !important;
     gap: 15rem;
 }
 

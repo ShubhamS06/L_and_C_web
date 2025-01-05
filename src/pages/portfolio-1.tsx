@@ -14,8 +14,8 @@ export default function Portfolio1Page() {
       <div className={`${styles.projectSection} flex flex-col`}>
         <div className="w-full">
           <div className="flex items-end justify-between">
-            <div className="heading">Project Name</div>
-            <div className="font-semibold font-25">Location</div>
+            <div className="heading m-0">Project Name</div>
+            <div className="font-bold font-25">Location</div>
           </div>
           <div className="font-semibold font-25">Interior / Architecture / Landscape</div>
         </div>
@@ -28,8 +28,8 @@ export default function Portfolio1Page() {
         <img src="/portfolio-map.svg" alt="" />
         <div className={`${styles.highlightGroup} flex flex-wrap`}>
           {portfolioHighlightsData.map(({ icon, text }, index) =>
-            <div className="flex justify-end">
-              <div key={index} className={`${styles.highlight} flex flex-col items-center`}>
+            <div key={index} className="flex justify-end">
+              <div className={`${styles.highlight} flex flex-col items-center`}>
                 <div className="flex justify-center items-center"><img src={icon} alt="" /></div>
                 <span>{text}</span>
               </div>

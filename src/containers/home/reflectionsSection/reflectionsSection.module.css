@@ -1,5 +1,5 @@
 .container {
-    width: calc(100% - 10%);
+    width: calc(100% - (var(--container-spacing) * 2)) !important;
     margin-inline: auto;
     --gap: 6rem;
     gap: var(--gap);

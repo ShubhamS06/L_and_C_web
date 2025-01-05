@@ -42,9 +42,11 @@ export default function ArchitectureSection() {
             <div className={`${styles.bottom} ms-auto flex justify-between items-end`}>
                 <div className="flex">
                     <img
+                        className="cursor-pointer active-press"
                         onClick={() => activeTab > 0 && setActiveTab(activeTab - 1)}
                         width={61} src="/icons/Arrow 2.svg" alt="" />
                     <img
+                        className="cursor-pointer active-press"
                         onClick={() => activeTab < 2 && setActiveTab(activeTab + 1)}
                         width={61} src="/icons/Arrow 1.svg" alt="" />
                 </div>
