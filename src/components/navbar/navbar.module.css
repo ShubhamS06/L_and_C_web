@@ -58,6 +58,10 @@ button[data-is="toggler"][data-toggled="true"] {
 }
 
 @media screen and (max-width: 700px) {
+    .right {
+        align-items: start;
+    }
+
     :root {
         --navbar-height: 10rem;
     }
