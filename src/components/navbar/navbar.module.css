@@ -6,7 +6,7 @@
     z-index: 1;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 97.5px;
+    padding: 0 var(--container-spacing);
     min-height: 126px;
 }
 
