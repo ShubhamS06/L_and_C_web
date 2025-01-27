@@ -50,6 +50,7 @@
 .bottom>*:last-child {
     gap: 4rem;
     overflow-x: auto;
+    padding-right: 5rem;
 }
 
 .bottom>*:last-child>* {
