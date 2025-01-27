@@ -6,8 +6,8 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <div className={`${styles.header} flex`}>
-        <div className="heading">
+      <div className={`${styles.header} flex items-center`}>
+        <div className="heading m-0">
           A Kaleidoscope of Architecture, Landscape & Interior Design
         </div>
 

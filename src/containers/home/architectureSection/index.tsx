@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { debounce } from "utiljs-pro"
 import styles from "./architectureSection.module.css"
 
-const scrollToElement = debounce((el: HTMLElement) => el.scrollIntoView({ behavior: "smooth", inline: "center" }), 50)
+const scrollToElement = debounce((el: HTMLElement) => el.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" }), 50)
 
 export default function ArchitectureSection() {
     const [activeTab, setActiveTab] = useState(0)
@@ -43,17 +43,20 @@ export default function ArchitectureSection() {
                 <div className="flex">
                     <img
                         className="cursor-pointer active-press"
+                        data-disabled={activeTab <= 0}
                         onClick={() => activeTab > 0 && setActiveTab(activeTab - 1)}
                         width={61} src="/icons/Arrow 2.svg" alt="" />
                     <img
                         className="cursor-pointer active-press"
-                        onClick={() => activeTab < 2 && setActiveTab(activeTab + 1)}
+                        data-disabled={activeTab >= 3}
+                        onClick={() => activeTab < 3 && setActiveTab(activeTab + 1)}
                         width={61} src="/icons/Arrow 1.svg" alt="" />
                 </div>
                 <div className="flex" ref={divRef}>
                     <img width={200} src="/architecture-img-1.png" alt="" />
                     <img width={200} src="/architecture-img-2.png" alt="" />
                     <img width={200} src="/architecture-img-1.png" alt="" />
+                    <img width={200} src="/architecture-img-2.png" alt="" />
                 </div>
             </div>
         </div>

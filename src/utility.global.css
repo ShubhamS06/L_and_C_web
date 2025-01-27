@@ -184,6 +184,10 @@
     cursor: pointer !important;
 }
 
+.active-press[data-disabled="true"] {
+    opacity: 0.5;
+}
+
 .capitalize {
     text-transform: capitalize !important;
 }

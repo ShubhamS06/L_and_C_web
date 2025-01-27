@@ -8,6 +8,7 @@
     aspect-ratio: 2.5;
     margin-top: var(--navbar-height);
     gap: 0;
+    max-height: 80vh;
 }
 
 .header img {
