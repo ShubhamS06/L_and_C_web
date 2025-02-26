@@ -1,5 +1,5 @@
 .container {
-    width: calc(100% - 10%);
+    width: calc(100% - (var(--container-spacing) * 2)) !important;
     aspect-ratio: 16 / 9;
     padding: 5%;
     background: linear-gradient(90deg, transparent, var(--bg-body) 80%);
@@ -12,62 +12,85 @@
     z-index: -1;
     height: 100%;
     inset: 0;
-    background: url("/bg-lines.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
     background: transparent;
 }
 
-.container[data-animate="true"]::before {
-    animation: anim-hide-bg 5s forwards;
-}
-
-@keyframes anim-hide-bg {
-    5% {
-        background: transparent;
-    }
-
-    100% {
+@media screen and (max-width: 450px) {
+    
+    .container::before {
         background: url("/bg-lines.svg");
         background-size: cover;
         background-repeat: no-repeat;
     }
-}
 
-.container>div {
-    transform: scale(.8) translateX(-15%);
-    gap: 6rem;
-    width: 70%;
-    opacity: 0;
-}
+    .container {
+        margin-bottom: 60%;
+    }
 
-.curve {
-    width: 30%;
-    left: 80% !important;
-}
+    .container>div {
+        position: absolute;
+        gap: 3rem;
+        top: 100%;
+        transform: scale(0.85);
+    }
 
-
-.container[data-animate="true"]>div {
-    animation: anim-opacity 5s forwards;
-    animation-delay: 1s;
-}
-
-.container[data-animate="true"] .curve {
-    animation: anim-wave 5s infinite;
-}
-
-@keyframes anim-opacity {
-    to {
-        opacity: 1;
+    .curve {
+        width: 60%;
     }
 }
 
-@keyframes anim-wave {
-    50% {
-        filter: brightness(0) saturate(100%) invert(59%) sepia(73%) saturate(337%) hue-rotate(329deg) brightness(98%) contrast(89%);
+@media screen and (min-width: 451px) {
+    .container[data-animate="true"]::before {
+        animation: anim-hide-bg 5s forwards;
     }
 
-    100% {
-        filter: none;
+    @keyframes anim-hide-bg {
+        5% {
+            background: transparent;
+        }
+
+        100% {
+            background: url("/bg-lines.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .container>div {
+        transform: scale(.8) translateX(-15%);
+        gap: 6rem;
+        width: 70%;
+        opacity: 0;
+    }
+
+    .curve {
+        width: 30%;
+        left: 80% !important;
+    }
+
+
+    .container[data-animate="true"]>div {
+        animation: anim-opacity 5s forwards;
+        animation-delay: 1s;
+    }
+
+    .container[data-animate="true"] .curve {
+        animation: anim-wave 5s infinite;
+    }
+
+    @keyframes anim-opacity {
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes anim-wave {
+        50% {
+            filter: brightness(0) saturate(100%) invert(59%) sepia(73%) saturate(337%) hue-rotate(329deg) brightness(98%) contrast(89%);
+        }
+
+        100% {
+            filter: none;
+        }
     }
 }

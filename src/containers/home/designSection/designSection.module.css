@@ -1,6 +1,14 @@
 .container {
-    width: 80%;
+    width: calc(100% - (var(--container-spacing) * 2)) !important;
     gap: 5rem;
+}
+
+.container>*:first-child {
+    place-content: unset;
+}
+
+.container>*:first-child>img {
+    width: 100%;
 }
 
 .container>*:first-child>*:last-child {
@@ -8,7 +16,7 @@
 }
 
 .bottom {
-    gap: 10%;
+    gap: 15%;
 }
 
 .bottom>img {

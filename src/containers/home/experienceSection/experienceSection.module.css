@@ -2,7 +2,7 @@
     position: relative;
     margin: 20rem auto;
     margin-bottom: 0;
-    width: calc(100% - 10%);
+    width: calc(100% - (var(--container-spacing) * 2));
     padding: 15rem 5%;
     --gap: 6rem;
     gap: var(--gap);
