@@ -221,11 +221,19 @@
     }
 }
 
+@media screen and (min-width: 700px) {
+    .portfolio_3rd_img{
+        height: 392px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     :root {
         --padding-inline: 5%;
     }
-
+    .portfolio_3rd_img{
+        height: 80px;
+    }
     .renderSection,
     .imagesSection>*:first-child {
         flex-direction: column;
