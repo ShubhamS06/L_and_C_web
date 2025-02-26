@@ -49,7 +49,7 @@ export default function Portfolio1Page() {
           <img src="/image 67.png" alt="" />
           <img src="/Mask group (1).png" alt="" />
           <div className="flex flex-col justify-center justify-between">
-            <img src="/image 62.png" alt="" />
+            <img src="/image 62.png" alt="" className={`${styles.portfolio_3rd_img}`}/>
             <div className={`${styles.imagesTogglerParent} flex justify-evenly`}>
               <img src="/icons/Arrow 2.svg" alt="" />
               <img src="/icons/Arrow 1.svg" alt="" />

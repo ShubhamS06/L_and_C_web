@@ -6,9 +6,10 @@
 
 .header {
     aspect-ratio: 2.5;
-    margin-top: var(--navbar-height);
+    margin-top: 10.6rem;
+    /* margin-top: var(--navbar-height); */
     gap: 0;
-    max-height: 80vh;
+    /* max-height: 80vh; */
 }
 
 .header img {
@@ -222,11 +223,19 @@
     }
 }
 
+@media screen and (min-width: 700px) {
+    .portfolio_3rd_img{
+        height: 392px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     :root {
         --padding-inline: 5%;
     }
-
+    .portfolio_3rd_img{
+        height: 80px;
+    }
     .renderSection,
     .imagesSection>*:first-child {
         flex-direction: column;
