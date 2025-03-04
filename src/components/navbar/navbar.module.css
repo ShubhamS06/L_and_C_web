@@ -67,10 +67,9 @@ button[data-is="toggler"][data-toggled="true"] {
     }
 
     .right {
-        top: 100%;
+        top: 0;
         left: 0;
-        padding: 10px 16px;
-        padding-block: 36px;
+        padding: 130px 16px 50px 16px;
         background: var(--bg-body);
         width: calc(100% - 32px);
         position: absolute;

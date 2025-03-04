@@ -16,13 +16,13 @@ export default function Navbar() {
         <>
             <div className={`${styles.navbar} flex items-center justify-between`}>
                 <NavLink to="/" className='d-contents'>
-                    <div className={`${styles.left} flex items-center`}>
+                    <div className={`${styles.left} flex items-center`} style={{zIndex:"1"}}>
                         <img src="/brand-logo.png" className={`${styles.brandImg}`} />
                     </div>
                 </NavLink>
 
                 <button data-is="toggler" data-toggled={showNavlinks}
-                    onClick={toggleShowNavlinks}
+                    onClick={toggleShowNavlinks}  style={{zIndex:"1"}}
                 >
                     <img src={showNavlinks ? "/icons/close-x-sm.svg" : "/icons/menu.svg"} alt="" />
                 </button>
@@ -31,7 +31,7 @@ export default function Navbar() {
                     {navLinks.map(({ text, path }) =>
                         <NavLink
                             to={path}
-                            className={({ isActive }) => `${styles.navLink} data-praveen cursor-pointer${isActive ? " " + styles.active : ""}`}
+                            className={({ isActive }) => `${styles.navLink} cursor-pointer${isActive ? " " + styles.active : ""}`}
                             onClick={() => (showNavlinks) && setShowNavlinks(false)}
                             key={text}>
                             {text}
@@ -39,7 +39,7 @@ export default function Navbar() {
                     )}
                     <button
                         onClick={toggleShowDialog}
-                        className={`${styles.navLink} ${styles.primary} active-press data-praveen cursor-pointer `}>Enquire Now</button>
+                        className={`${styles.navLink} ${styles.primary} active-press cursor-pointer `}>Enquire Now</button>
                 </div>
             </div>
             <EnquireDialog show={showDialog} onClose={() => setShowDialog(false)} />

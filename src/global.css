@@ -245,7 +245,15 @@ hr {
   margin: 1rem 0;
   padding: 0;
 }
-
+.about_ani_Heading{
+  width: 100%;
+  /* font-family: var(--font-secondary), sans-serif; */
+    font-size: 3.8rem;
+    line-height: 4.18rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    max-width: 868px;
+}
 @media screen and (max-width: 1500px) {
   :root {
     font-size: 8px;

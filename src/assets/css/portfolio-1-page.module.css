@@ -201,8 +201,8 @@
 }
 
 .imagesSection2 {
-    --gap: 1rem;
-    gap: calc(var(--gap) * 3);
+    /* --gap: 1rem;
+    gap: calc(var(--gap) * 3); */
     display: grid;
     grid-template-columns: calc(40% - var(--gap)) calc(35% - var(--gap)) calc(25% - var(--gap));
     grid-template-rows: calc(35% - var(--gap)) calc(45% - var(--gap)) fit-content;
@@ -230,6 +230,9 @@
 }
 
 @media screen and (max-width: 700px) {
+    .header{
+        margin-top: 15rem;
+    }
     :root {
         --padding-inline: 5%;
     }
