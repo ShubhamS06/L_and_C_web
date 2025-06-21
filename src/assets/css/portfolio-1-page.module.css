@@ -6,7 +6,8 @@
 
 .header {
     aspect-ratio: 2.5;
-    margin-top: 10.6rem;
+    margin-top: 13vh;
+    /* margin-top: 10.6rem; */
     /* margin-top: var(--navbar-height); */
     gap: 0;
     /* max-height: 80vh; */
@@ -174,6 +175,7 @@
 
 .imagesSection2 img {
     border-radius: 3.2rem;
+    min-width: 100%;
 }
 
 .imagesSection2>*:nth-child(1) {

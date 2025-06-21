@@ -6,7 +6,7 @@
 
 .container {
     --height: 70rem;
-    gap: 1rem;
+    gap: 2.5rem;
     height: var(--height);
     width: 100%;
     animation: anim-bg-gradient 3s forwards ease-in;
@@ -105,5 +105,6 @@
     .container {
         font-size: 4px;
         text-align: center;
+        gap: 1rem;
     }
 }

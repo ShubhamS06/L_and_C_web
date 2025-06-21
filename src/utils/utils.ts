@@ -15,7 +15,7 @@ export function isElementVisible(element: Element) {
     );
 }
 
-export const scrollToElement = debounce((element: Element) => { element.scrollIntoView({ behavior: "smooth" }) }, 50)
+export const scrollToElement = debounce((element: Element) => { element.scrollIntoView({ behavior: "smooth" }) }, 10)
 
 export const getCircleTransformDegree = (length: number, index: number) => {
     let part = Math.round(360 / length);

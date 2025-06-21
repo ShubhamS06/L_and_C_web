@@ -41,7 +41,7 @@
 @media screen and (min-width: 451px) {
 
     .container[data-animate="true"]::before {
-        animation: anim-hide-bg 5s forwards;
+        animation: anim-hide-bg 1.5s forwards;
     }
 
     @keyframes anim-hide-bg {
@@ -69,12 +69,12 @@
     }
 
     .container[data-animate="true"]>div {
-        animation: anim-opacity 5s forwards;
-        animation-delay: 1s;
+        animation: anim-opacity 2s forwards;
+        animation-delay: 0.1s;
     }
 
     .container[data-animate="true"] .curve {
-        animation: anim-wave 5s infinite;
+        animation: anim-wave 2s infinite;
     }
 
     @keyframes anim-opacity {
