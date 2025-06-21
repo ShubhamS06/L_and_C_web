@@ -401,6 +401,12 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+    .subheading {
+        color: #ffffff99;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 3.12rem;
+    }
     .text-left-sm {
         text-align: left;
     }
