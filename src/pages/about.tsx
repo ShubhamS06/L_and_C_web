@@ -4,7 +4,7 @@ import HeroSection from '../containers/about/heroSection'
 import TheArcSection from '../containers/about/theArcSection'
 import TheLandsSection from '../containers/about/theLandsSection'
 import TheInteriorSection from '../containers/about/theInteriorSection'
-// import ScrollSection from '../containers/about/scrollSection'
+import ScrollSection from '../containers/about/scrollSection'
 import { isElementVisible } from '../utils/utils'
 import TeamSection from '../containers/about/teamSection'
 import ContactSection from '../containers/about/contactSection'
@@ -26,7 +26,7 @@ export default function AboutPage() {
         }
       })
     // 
-  }, 50)
+  }, 10)
 
   useEffect(() => {
     document.addEventListener("scrollend", onScrollEnd)
@@ -40,7 +40,7 @@ export default function AboutPage() {
     <>
       <HeroSection />
       <div id="animated-sections" className="d-contents">
-        {/* <ScrollSection id="section-scroll" animate={visibleSection.includes("section-scroll")} /> */}
+        <ScrollSection id="section-scroll" animate={visibleSection.includes("section-scroll")} />
         <TheArcSection id="section-theArc" animate={visibleSection.includes("section-theArc")} />
         <TheLandsSection id="section-theLands" animate={visibleSection.includes("section-theLands")} />
         <TheInteriorSection id="section-theInterior" animate={visibleSection.includes("section-theInterior")} />

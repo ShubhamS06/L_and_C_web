@@ -26,14 +26,15 @@ export default function ArchitectureSection() {
                     <p className="subheading text-left">
                         Transforming outdoor spaces into serene havens, our landscape designs seamlessly integrate nature and architecture. We create environments
                     </p>
-                    <a className={`external-link flex`} href="#">
+                    <a className={`external-link flex`} href="/portfolio">
                         View Projects
                     </a>
                 </div>
                 <div className={`${styles.tabs} flex flex-col`}>
-                    {["Architecture", "Landscape", "Interior"].map((tab, index) =>
+                    {["Interior", "Landscape", "Architecture", ].map((tab, index) =>
                     (<div key={tab} data-active={activeTab == index}
                         onClick={() => setActiveTab(index)}
+                        style={{color: activeTab == index ? "#F2F2F2" : "#CF7B60"}}
                     >
                         {tab}
                     </div>))}
@@ -45,18 +46,18 @@ export default function ArchitectureSection() {
                         className="cursor-pointer active-press"
                         data-disabled={activeTab <= 0}
                         onClick={() => activeTab > 0 && setActiveTab(activeTab - 1)}
-                        width={61} src="/icons/Arrow 2.svg" alt="" />
+                        width={61} src="/icons/Arrow 2.svg" alt="Arrow left" />
                     <img
                         className="cursor-pointer active-press"
                         data-disabled={activeTab >= 3}
                         onClick={() => activeTab < 3 && setActiveTab(activeTab + 1)}
-                        width={61} src="/icons/Arrow 1.svg" alt="" />
+                        width={61} src="/icons/Arrow 1.svg" alt="Arrow right" />
                 </div>
                 <div className="flex" ref={divRef}>
-                    <img width={200} src="/architecture-img-1.png" alt="" />
-                    <img width={200} src="/architecture-img-2.png" alt="" />
-                    <img width={200} src="/architecture-img-1.png" alt="" />
-                    <img width={200} src="/architecture-img-2.png" alt="" />
+                    <img className={`${styles.Architecture_Design_images}`} src="/architecture-img-1.png" alt="" />
+                    <img className={`${styles.Architecture_Design_images}`} src="/architecture-img-2.png" alt="" />
+                    <img className={`${styles.Architecture_Design_images}`} src="/architecture-img-1.png" alt="" />
+                    <img className={`${styles.Architecture_Design_images}`} src="/architecture-img-2.png" alt="" />
                 </div>
             </div>
         </div>

@@ -354,14 +354,16 @@
     font-weight: 600;
     letter-spacing: 0.04em;
     max-width: 868px;
-    margin-inline: auto;
+    /* margin-inline: auto; */
 }
 
 .subheading {
     color: #ffffff99;
-    font-size: 2.4rem;
+    font-size: 24px;
+    /* font-size: 2.4rem; */
     font-weight: 400;
-    line-height: 3.12rem;
+    line-height: 130%;
+    /* line-height: 3.12rem; */
 }
 
 a {
@@ -399,6 +401,12 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+    .subheading {
+        color: #ffffff99;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 3.12rem;
+    }
     .text-left-sm {
         text-align: left;
     }

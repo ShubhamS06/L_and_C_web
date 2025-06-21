@@ -37,8 +37,10 @@
     }
 
     .container[data-animate="true"]::before {
-        animation: anim-hide-bg 5s forwards;
-        animation-delay: 3s;
+        /* animation: anim-hide-bg 5s forwards;
+        animation-delay: 3s; */
+        animation: anim-hide-bg 1s forwards;
+        animation-delay: 0.1s;
     }
 
     @keyframes anim-hide-bg {
@@ -64,12 +66,15 @@
     }
 
     .container[data-animate="true"]>div {
-        animation: anim-opacity 5s forwards;
-        animation-delay: 6s;
+        animation: anim-opacity 3s forwards;
+        animation-delay: 1.6s;
+        /* animation: anim-opacity 3s forwards;
+        animation-delay: 1.6s; */
     }
 
     .container[data-animate="true"] .curve {
-        animation: anim-center 8s forwards;
+        animation: anim-center 1s forwards;
+        /* animation: anim-center 8s forwards; */
     }
 
     @keyframes anim-opacity {

@@ -107,10 +107,10 @@ export default function Portfolio1Page() {
       </div>
 
       <div className={`${styles.imagesSection2}`}>
-        <img src="/image 64.png" alt="" />
-        <img src="/image 66.png" alt="" />
-        <img src="/image 61.png" alt="" />
-        <img src="/image 65.png" alt="" />
+        <img src="/image 64.png" alt="shofa sitting" />
+        <img src="/image 66.png" alt="lemp desk" />
+        <img src="/image 61.png" alt="bath room" />
+        <img src="/image 65.png" alt="chair" />
         <div className={`subheading flex justify-evenly`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit veritatis laborum.
         </div>
@@ -119,7 +119,9 @@ export default function Portfolio1Page() {
       <div className={`${styles.paraSection} subheading`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet urna, nec maximus lorem dignissim eget. Aliquam in turpis sit amet ligula mollis tempus sit amet sed leo. Vestibulum finibus est at lacus laoreet, ut viverra nisl egestas. In interdum eu tortor sit amet malesuada.rpis sit amet ligula mollis tempus sit amet sed leo. Vestibulum finibus est at lacus laoreet, ut viverra nisl egestas. In interdum eu tortor sit amet malesuada.
       </div>
-
+      <div className={`${styles.mapSection}`}>
+        <img src="/l&C_map.png" alt="map image" width={"100%"} />
+      </div>
     </>
   )
 }

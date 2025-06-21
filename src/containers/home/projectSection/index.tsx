@@ -9,7 +9,7 @@ export default function ProjectSection() {
             <div className={`${styles.left} flex flex-col justify-between`}>
                 <img src="/FloorP 1.png" alt="" />
                 <div className={`${styles.tabs} flex text-center`}>
-                    {["Floor Plan", "Interior", "Exterior"].map((tab, index) =>
+                    {["Floor Plan", "Interior/Exterior"].map((tab, index) =>
                     (<div key={tab} data-active={activeTab == index}
                         onClick={() => setActiveTab(index)}
                     >
@@ -18,7 +18,7 @@ export default function ProjectSection() {
                 </div>
             </div>
             <div className={`${styles.right} flex flex-col justify-between`}>
-                <div className="heading">Project Name</div>
+                <h2 className="heading">Project Name</h2>
                 <p className="subheading">
                     Transforming outdoor spaces into serene
                     havens, our landscape designs seamlessly

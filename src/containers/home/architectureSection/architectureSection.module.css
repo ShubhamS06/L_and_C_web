@@ -58,12 +58,16 @@
     aspect-ratio: 16/9;
     border-radius: min(3.6rem, 5vw);
 }
-
+.Architecture_Design_images{
+    min-width: 50%;
+}
 @media screen and (max-width: 700px) {
     .container>*:first-child {
         width: calc(100% - 5rem) !important;
     }
-
+    .Architecture_Design_images{
+        min-width: 220px;
+    }
     .top {
         width: 100%;
     }

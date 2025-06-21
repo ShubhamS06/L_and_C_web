@@ -7,7 +7,8 @@
     width: 100%;
     box-sizing: border-box;
     padding: 0 var(--container-spacing);
-    min-height: 126px;
+    min-height: 13vh;
+    /* min-height: 126px; */
 }
 
 button[data-is="toggler"] {
