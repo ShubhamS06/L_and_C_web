@@ -37,6 +37,10 @@ body {
   background: var(--bg-body);
   color: #ffffff;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
 /**
 * @license

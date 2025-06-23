@@ -2,6 +2,7 @@ import { useState } from "react";
 import EnquireDialog from "../enquireDialog";
 import styles from "./footer.module.css";
 import { debounce } from "utiljs-pro";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const [showDialog, setShowDialog] = useState(false);
@@ -17,24 +18,38 @@ export default function Footer() {
             </p>
           </div>
           <div className={`${styles.socials} flex items-center`}>
+            <Link to={"https://wa.me/918788464468"} target="_blank">
             <img
               className={styles.imgMedium}
               width={40}
               src="/icons/Whatsapp.svg"
-              alt=""
-            />
-            <img
-              className={styles.imgMedium}
-              width={40}
-              src="/icons/Instagram.png"
-              alt=""
-            />
+              alt="Whatsapp"
+              />
+              </Link>
+            <Link to={"https://www.instagram.com/linesncurves.studio?igsh=MTc0d3o4MzRqNmsxcg=="} target="_blank">
+                <img
+                className={styles.imgMedium}
+                width={40}
+                src="/icons/Instagram.png"
+                alt="Instagram"
+                />
+            </Link>
+            {/* <Link to={"https://www.linkedin.com/company/lnc-studio/"} target="_blank">
+              <img
+                className={styles.imgMedium}
+                width={40}
+                src="/icons/Linkedin.png"
+                alt="LinkedIn"
+              />
+            </Link> */}
+            <Link to={"https://www.facebook.com/linesncurves.studio"} target="_blank">
             <img
               className={styles.imgMedium}
               width={40}
               src="/icons/Facebook.png"
-              alt=""
+              alt="Facebook"
             />
+            </Link>
           </div>
         </div>
         <div className="flex flex-col">
@@ -44,11 +59,11 @@ export default function Footer() {
               className={styles.imgMedium}
               width={40}
               src="/icons/Email.png"
-              alt=""
+              alt="Email"
             />
             <div>
               <div>Email</div>
-              <div>linesncurve@gmail.com</div>
+              <div><Link to={"mailto:sanket@linesncurves.studio"}>sanket@linesncurves.studio</Link></div>
             </div>
           </div>
           <div className={`${styles.block} flex items-center`}>
@@ -60,7 +75,7 @@ export default function Footer() {
             />
             <div>
               <div>Contact</div>
-              <div>+91 8788464468</div>
+              <div> <Link to={"tel:8788464468"}> +91 8788464468 </Link></div>
             </div>
           </div>
         </div>
