@@ -12,7 +12,7 @@ export default function DesignSection() {
                 <img src="/Group.png" alt="" />
                 <div>
                     <p className={`${styles.para} font-normal`}>Transforming outdoor spaces into serene havens, our landscape designs seamlessly integrate nature and architecture. We create environments that are not only visually stunning but also sustainable and functional.</p>
-                    <a className={`external-link flex`} href="#">
+                    <a className={`external-link flex`} href="/about">
                         Who we are
                     </a>
                 </div>
