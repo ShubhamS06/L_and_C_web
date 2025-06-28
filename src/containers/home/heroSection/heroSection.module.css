@@ -51,7 +51,7 @@
     background-repeat: no-repeat;
 }
 
-.title {
+/* .title {
     font-weight: 400;
     font-size: 2.8em;
     line-height: 3.08rem;
@@ -64,7 +64,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: anim-bg-move 3s forwards ease-in;
-}
+} */
 
 @keyframes anim-bg-move {
     100% {
@@ -80,19 +80,25 @@
     letter-spacing: 0.01em;
 }
 
+.title_t,
 .heading,
 .subHeading {
     opacity: 0;
     animation: anim-opacity 1s forwards ease-in;
     animation-delay: 3.5s;
 }
-
+.title_t {
+    font-weight: 400;
+    font-size: 2.8em;
+    letter-spacing: 14px;
+    animation-delay: 1.5s !important;
+}
 .subHeading {
     font-weight: 400;
     font-size: 2.4em;
     line-height: 2.88rem;
     letter-spacing: 0.01em;
-    animation-delay: 7.5s !important;
+    animation-delay: 6.5s !important;
 }
 
 @keyframes anim-opacity {
